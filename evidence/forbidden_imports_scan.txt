@@ -1,0 +1,4 @@
+Scanning project directory for forbidden imports: D:\ATTT
+Total Python files scanned: 14
+
+[PASS] No forbidden crypto libraries or dynamic imports detected.

@@ -1,0 +1,71 @@
+test_add_round_key_fips197_appendix_b (tests.test_aes128.TestAES128.test_add_round_key_fips197_appendix_b)
+Test AddRoundKey with round key 1 against FIPS 197 Appendix B Round 1. ... ok
+test_add_round_key_twice_returns_original (tests.test_aes128.TestAES128.test_add_round_key_twice_returns_original)
+Edge test: Applying AddRoundKey twice with the same key returns original state. ... ok
+test_aes_transformations_roundtrip (tests.test_aes128.TestAES128.test_aes_transformations_roundtrip)
+Test roundtrips for SubBytes, ShiftRows, and MixColumns. ... ok
+test_cbc_pkcs7_regression_vectors (tests.test_aes128.TestAES128.test_cbc_pkcs7_regression_vectors)
+Test CBC encryption with PKCS#7 against regression vectors with student key. ... ok
+test_cbc_pkcs7_roundtrips_variable_lengths (tests.test_aes128.TestAES128.test_cbc_pkcs7_roundtrips_variable_lengths)
+Test roundtrip for lengths 0, 1, 15, 16, 17, 31, 32, 100 bytes. ... ok
+test_decrypt_block_fips197_appendix_b (tests.test_aes128.TestAES128.test_decrypt_block_fips197_appendix_b)
+Test decrypt_block against FIPS 197 Appendix B. ... ok
+test_decrypt_block_fips197_appendix_c1 (tests.test_aes128.TestAES128.test_decrypt_block_fips197_appendix_c1)
+Test decrypt_block against FIPS 197 Appendix C.1. ... ok
+test_decrypt_block_roundtrips (tests.test_aes128.TestAES128.test_decrypt_block_roundtrips)
+Test decrypt_block(encrypt_block(x)) == x for 5 fixed blocks under 2 keys. ... ok
+test_decrypt_block_value_error (tests.test_aes128.TestAES128.test_decrypt_block_value_error)
+Test decrypt_block raises ValueError on invalid block size or round key count. ... ok
+test_decrypt_message_value_errors (tests.test_aes128.TestAES128.test_decrypt_message_value_errors)
+Test ValueError on bad ciphertext length and tampered padding. ... ok
+test_encrypt_block_fips197_appendix_b (tests.test_aes128.TestAES128.test_encrypt_block_fips197_appendix_b)
+Test encrypt_block against FIPS 197 Appendix B. ... ok
+test_encrypt_block_fips197_appendix_c1 (tests.test_aes128.TestAES128.test_encrypt_block_fips197_appendix_c1)
+Test encrypt_block against FIPS 197 Appendix C.1. ... ok
+test_encrypt_block_value_error (tests.test_aes128.TestAES128.test_encrypt_block_value_error)
+Test encrypt_block raises ValueError on invalid block size or round key count. ... ok
+test_fips197_appendix_c1 (tests.test_aes128.TestAES128.test_fips197_appendix_c1)
+Mandatory NIST FIPS-197 Appendix C.1 test vector. ... ok
+test_gf_mul_fips197_sec4_2_1 (tests.test_aes128.TestAES128.test_gf_mul_fips197_sec4_2_1)
+Test gf_mul against FIPS 197 Section 4.2.1. ... ok
+test_gf_xtime_fips197_sec4_2_1 (tests.test_aes128.TestAES128.test_gf_xtime_fips197_sec4_2_1)
+Test xtime in GF(2^8) against FIPS 197 Section 4.2.1. ... ok
+test_inv_mix_columns_fips197 (tests.test_aes128.TestAES128.test_inv_mix_columns_fips197)
+Test InvMixColumns against FIPS 197 Appendix B Round 1 state. ... ok
+test_inv_mix_columns_single_columns (tests.test_aes128.TestAES128.test_inv_mix_columns_single_columns)
+Test InvMixColumns on single column test vectors placed in column 0. ... ok
+test_inv_shift_rows_fips197 (tests.test_aes128.TestAES128.test_inv_shift_rows_fips197)
+Test InvShiftRows against FIPS 197 test vector. ... ok
+test_inv_sub_bytes_fips197 (tests.test_aes128.TestAES128.test_inv_sub_bytes_fips197)
+Test InvSubBytes against FIPS 197 test vector. ... ok
+test_key_expansion_fips197_appendix_a1 (tests.test_aes128.TestAES128.test_key_expansion_fips197_appendix_a1)
+Test A: FIPS 197 Appendix A.1 test vectors for w4..w7 and w40..w43. ... ok
+test_key_expansion_fips197_appendix_c1 (tests.test_aes128.TestAES128.test_key_expansion_fips197_appendix_c1)
+Test B: FIPS 197 Appendix C.1 test vectors for w4..w7 and round key 10. ... ok
+test_key_expansion_shape_and_initial_key (tests.test_aes128.TestAES128.test_key_expansion_shape_and_initial_key)
+Test C: Shape 11x4x4, byte range 0..255, and round_keys[0] equals key bytes. ... ok
+test_mix_columns_fips197_appendix_b (tests.test_aes128.TestAES128.test_mix_columns_fips197_appendix_b)
+Test MixColumns against FIPS 197 Appendix B full 16-byte states. ... ok
+test_mix_columns_single_columns (tests.test_aes128.TestAES128.test_mix_columns_single_columns)
+Test MixColumns on single column test vectors placed in column 0. ... ok
+test_nist_sp800_38a_f21_cbc (tests.test_aes128.TestAES128.test_nist_sp800_38a_f21_cbc)
+Test AES-128 CBC mode against NIST SP 800-38A Section F.2.1 with prepended IV and PKCS#7. ... ok
+test_pkcs7_pad_unpad (tests.test_aes128.TestAES128.test_pkcs7_pad_unpad)
+Test PKCS#7 pad and unpad roundtrips for lengths 0..33 and invalid padding detection. ... ok
+test_random_iv_produces_different_ciphertexts (tests.test_aes128.TestAES128.test_random_iv_produces_different_ciphertexts)
+Test encrypting same plaintext twice without fixed IV produces distinct ciphertexts. ... ok
+test_regression_vector_student_key (tests.test_aes128.TestAES128.test_regression_vector_student_key)
+Test regression vector under student derived key in both encrypt and decrypt directions. ... ok
+test_shift_rows_fips197_appendix_b (tests.test_aes128.TestAES128.test_shift_rows_fips197_appendix_b)
+Test ShiftRows against FIPS 197 Appendix B Round 1. ... ok
+test_student_derived_key_single_block (tests.test_aes128.TestAES128.test_student_derived_key_single_block)
+Test AES-128 single block roundtrip with student key derived from SHA-256('Nguyen Thi Nhu Y'). ... ok
+test_student_mode_message_roundtrip (tests.test_aes128.TestAES128.test_student_mode_message_roundtrip)
+Test arbitrary-length message encryption using student's chosen mode and padding. ... ok
+test_sub_bytes_fips197_appendix_b (tests.test_aes128.TestAES128.test_sub_bytes_fips197_appendix_b)
+Test SubBytes against FIPS 197 Appendix B Round 1. ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.045s
+
+OK

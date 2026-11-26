@@ -1,0 +1,11 @@
+test_pkcs7_16_byte_input_full_block (tests.test_utils.TestUtils.test_pkcs7_16_byte_input_full_block)
+Test that a 16-byte input gets a full 16-byte padding block. ... ok
+test_pkcs7_invalid_padding_rejected (tests.test_utils.TestUtils.test_pkcs7_invalid_padding_rejected)
+Test that invalid padding bytes and lengths are properly rejected. ... ok
+test_pkcs7_pad_unpad_lengths (tests.test_utils.TestUtils.test_pkcs7_pad_unpad_lengths)
+Test PKCS#7 pad and unpad roundtrips for lengths 0..33. ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

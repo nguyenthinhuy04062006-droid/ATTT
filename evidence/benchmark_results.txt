@@ -1,0 +1,69 @@
+================================================================================
+CRYPTOGRAPHIC BENCHMARK REPORT - ATTT PROJECT
+================================================================================
+Timestamp:        2026-11-23 01:26:51
+Operating System: Windows 11 (10.0.22621)
+Processor:        Intel64 Family 6 Model 151 Stepping 2, GenuineIntel
+Python Version:   3.13.15
+Benchmark Mode:   FULL
+================================================================================
+
+1. BENCHMARK: AES-128 Symmetric Cipher (NIST FIPS 197, CBC mode, PKCS#7)
+--------------------------------------------------------------------------------
+Operation        | Size     | n    | Median(ms) | Mean(ms)   | Throughput(MB/s)   | Status
+--------------------------------------------------------------------------------
+key_expansion    | 16 bytes | 50   | 0.0263     | 0.0269     | 37207.9            ops/s | PASS
+encrypt          | 1 KB     | 10   | 3.4492     | 3.5584     | 0.274              | PASS
+decrypt          | 1 KB     | 10   | 35.6849    | 37.7526    | 0.026              | PASS
+encrypt          | 16 KB    | 10   | 55.4176    | 55.9923    | 0.279              | PASS
+decrypt          | 16 KB    | 10   | 584.4326   | 587.9991   | 0.027              | PASS
+encrypt          | 64 KB    | 10   | 226.0818   | 225.0575   | 0.278              | PASS
+decrypt          | 64 KB    | 10   | 2328.4935  | 2327.7168  | 0.027              | PASS
+
+2. BENCHMARK: RSA Asymmetric Cryptosystem (RFC 8017 / PKCS #1)
+--------------------------------------------------------------------------------
+Operation      | Key Size   | n    | Median(ms) | Mean(ms)   | Throughput(ops/s)  | Status
+--------------------------------------------------------------------------------
+keygen         | 512 bits   | 30   | 18.2338    | 18.7672    | 53.28              | PASS
+encrypt        | 512 bits   | 30   | 0.0121     | 0.0123     | 81124.93           | PASS
+decrypt        | 512 bits   | 30   | 0.4673     | 0.4886     | 2046.59            | PASS
+keygen         | 1024 bits  | 30   | 166.7929   | 194.2062   | 5.15               | PASS
+encrypt        | 1024 bits  | 30   | 0.0399     | 0.0444     | 22525.90           | PASS
+decrypt        | 1024 bits  | 30   | 2.8037     | 2.8857     | 346.54             | PASS
+keygen         | 2048 bits  | 10   | 1202.8804  | 1340.3348  | 0.75               | PASS
+encrypt        | 2048 bits  | 10   | 0.1196     | 0.1202     | 8317.39            | PASS
+decrypt        | 2048 bits  | 10   | 18.0644    | 18.2759    | 54.72              | PASS
+[Random-time] RSA keygen (512 bits): min = 8.5393 ms / median = 18.2338 ms / max = 41.5986 ms (n = 30)
+[Random-time] RSA keygen (1024 bits): min = 86.4620 ms / median = 166.7929 ms / max = 484.5478 ms (n = 30)
+[Random-time] RSA keygen (2048 bits): min = 409.0141 ms / median = 1202.8804 ms / max = 2282.3746 ms (n = 10)
+
+3. BENCHMARK: SHA-256 Cryptographic Hash Function (FIPS 180-4)
+--------------------------------------------------------------------------------
+Size       | n    | Median(ms) | Mean(ms)   | Stdev(ms)  | Throughput(MB/s)   | Status
+--------------------------------------------------------------------------------
+1 KB       | 20   | 2.0764     | 2.1645     | 0.2207     | 0.451              | PASS
+10 KB      | 20   | 19.3055    | 19.6061    | 1.0178     | 0.498              | PASS
+100 KB     | 10   | 192.5787   | 193.2995   | 3.0470     | 0.505              | PASS
+1 MB       | 10   | 1997.2171  | 1998.2039  | 19.5762    | 0.500              | PASS
+
+4. BENCHMARK: ElGamal Digital Signature Scheme (ElGamal 1985)
+--------------------------------------------------------------------------------
+Operation      | Domain/Key | n    | Median(ms) | Mean(ms)   | Throughput(ops/s)  | Sig Size | Status
+--------------------------------------------------------------------------------
+params_gen     | 512 bits   | 30   | 881.6669   | 1044.6876  | 0.96               | N/A      | PASS
+keygen         | 512 bits   | 30   | 0.4617     | 0.4627     | 2161.24            | N/A      | PASS
+sign           | 512 bits   | 100  | 0.8182     | 0.8610     | 1161.51            | 128 B    | PASS
+verify         | 512 bits   | 100  | 1.2922     | 1.3365     | 748.22             | 128 B    | PASS
+params_gen     | 1024 bits  | 5    | 21248.6043 | 22769.8574 | 0.04               | N/A      | PASS
+keygen         | 1024 bits  | 30   | 2.6597     | 2.6806     | 373.05             | N/A      | PASS
+sign           | 1024 bits  | 100  | 3.3669     | 3.4829     | 287.11             | 256 B    | PASS
+verify         | 1024 bits  | 100  | 6.2321     | 6.3437     | 157.64             | 256 B    | PASS
+[Random-time] ElGamal params_gen (512 bits): min = 73.5566 ms / median = 881.6669 ms / max = 2555.7488 ms (n = 30)
+[Random-time] ElGamal keygen (512 bits): min = 0.4563 ms / median = 0.4617 ms / max = 0.4768 ms (n = 30)
+[Random-time] ElGamal params_gen (1024 bits): min = 14606.2617 ms / median = 21248.6043 ms / max = 31453.9781 ms (n = 5)
+[Random-time] ElGamal keygen (1024 bits): min = 2.6233 ms / median = 2.6597 ms / max = 2.8429 ms (n = 30)
+
+================================================================================
+BENCHMARK COMPLETED SUCCESSFULLY.
+================================================================================
+Total Execution Wall Time: 324.716 seconds

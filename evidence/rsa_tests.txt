@@ -1,0 +1,29 @@
+test_extended_gcd (tests.test_rsa.TestRSA.test_extended_gcd)
+Test extended_gcd on specified pairs. ... ok
+test_fixed_textbook_key (tests.test_rsa.TestRSA.test_fixed_textbook_key)
+Test fixed textbook key p=61, q=53, n=3233, e=17, d=2753. ... ok
+test_generate_prime_bit_lengths_and_uniqueness (tests.test_rsa.TestRSA.test_generate_prime_bit_lengths_and_uniqueness)
+Test generate_prime for exact bit length, primality by trial division, and uniqueness. ... ok
+test_is_probable_prime_composites (tests.test_rsa.TestRSA.test_is_probable_prime_composites)
+Test is_probable_prime with k=40 on composites including Carmichael numbers. ... ok
+test_is_probable_prime_primes (tests.test_rsa.TestRSA.test_is_probable_prime_primes)
+Test is_probable_prime with k=40 on known primes. ... ok
+test_miller_rabin_known_values (tests.test_rsa.TestRSA.test_miller_rabin_known_values)
+Test Miller-Rabin on known primes and composites. ... ok
+test_mod_inverse (tests.test_rsa.TestRSA.test_mod_inverse)
+Test Extended Euclidean algorithm mod_inverse. ... ok
+test_mod_inverse_vectors (tests.test_rsa.TestRSA.test_mod_inverse_vectors)
+Test modular inverse with specific test vectors and non-coprime error. ... ok
+test_rsa_roundtrip_1024_bits (tests.test_rsa.TestRSA.test_rsa_roundtrip_1024_bits)
+Test RSA roundtrip with 1024-bit key. ... ok
+test_rsa_roundtrip_512_bits (tests.test_rsa.TestRSA.test_rsa_roundtrip_512_bits)
+Test RSA keypair generation and roundtrip encryption/decryption (512-bit). ... ok
+test_rsa_value_errors (tests.test_rsa.TestRSA.test_rsa_value_errors)
+Test ValueError for out-of-range message and ciphertext. ... ok
+test_wrong_private_key_fails (tests.test_rsa.TestRSA.test_wrong_private_key_fails)
+Test that wrong private key (d + 1) does not decrypt to original m. ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.201s
+
+OK

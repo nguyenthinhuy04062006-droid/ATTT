@@ -1,0 +1,30 @@
+# ==============================================================================
+# INFORMATION SECURITY COURSE PROJECT - DEPENDENCY SPECIFICATION
+# Student Name: Nguyen Thi Nhu Y
+# Student ID: Ends with 0
+# Runtime Environment: Python 3.13 (Standard Library only)
+# ==============================================================================
+#
+# ACADEMIC INTEGRITY NOTICE:
+# This project implements all four cryptographic algorithms (AES-128, RSA,
+# SHA-256, ElGamal) entirely from first principles (from scratch).
+#
+# STRICT ZERO THIRD-PARTY DEPENDENCY REQUIREMENT:
+# In accordance with course guidelines, NO external cryptographic libraries
+# (such as cryptography, pycryptodome, hashlib, hmac, ssl, rsa, etc.)
+# are permitted or installed.
+#
+# All source code exclusively relies on the Python Standard Library:
+#   - ast          : Static abstract syntax tree parsing to enforce zero forbidden imports
+#   - argparse     : Command-line interface argument handling for benchmark suite
+#   - csv          : Tabular formatting and export of benchmark measurements
+#   - datetime     : Timestamp recording for audit trails
+#   - os, sys      : Cross-platform filesystem navigation and path resolution
+#   - platform     : Hardware and operating system environment telemetry
+#   - secrets      : Cryptographically Secure Pseudo-Random Number Generator (CSPRNG)
+#   - statistics   : Statistical calculations (median, mean, stdev)
+#   - time         : High-resolution timing via time.perf_counter()
+#   - typing       : Static type hinting and annotations
+#   - unittest     : Automated test suite runner (65/65 test vectors)
+#
+# ==============================================================================

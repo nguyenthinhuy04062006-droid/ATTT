@@ -1,0 +1,29 @@
+test_elgamal_full_flow_with_generated_params (tests.test_elgamal.TestElGamal.test_elgamal_full_flow_with_generated_params)
+Test full generation of parameters, keys, and signing. ... ok
+test_elgamal_sign_verify_valid (tests.test_elgamal.TestElGamal.test_elgamal_sign_verify_valid)
+Test standard signing and verification with valid keys and message. ... ok
+test_elgamal_tampered_message_fails (tests.test_elgamal.TestElGamal.test_elgamal_tampered_message_fails)
+Test that altering 1 bit in the message invalidates the signature. ... ok
+test_elgamal_tampered_signature_fails (tests.test_elgamal.TestElGamal.test_elgamal_tampered_signature_fails)
+Test that altering 1 bit in signature components (r or s) invalidates verification. ... ok
+test_keypair_ranges (tests.test_elgamal.TestElGamal.test_keypair_ranges)
+Test keypair adheres to 2 <= x <= p - 2 and y == g^x mod p. ... ok
+test_negative_verification_cases (tests.test_elgamal.TestElGamal.test_negative_verification_cases)
+Test that tampered signatures, keys, and malformed inputs return False without raising. ... ok
+test_params_512_bits (tests.test_elgamal.TestElGamal.test_params_512_bits)
+Single test for 512-bit safe prime parameter generation and sign/verify roundtrip. ... ok
+test_params_various_bit_lengths (tests.test_elgamal.TestElGamal.test_params_various_bit_lengths)
+Test parameter generation across bits=8, 10, 16, 32, 64, 128 and error for bits=7. ... ok
+test_randomized_signatures_different (tests.test_elgamal.TestElGamal.test_randomized_signatures_different)
+Test same message signed twice produces distinct (r, s) due to fresh k. ... ok
+test_roundtrip_128_bit_params_20_signatures (tests.test_elgamal.TestElGamal.test_roundtrip_128_bit_params_20_signatures)
+Test round trip with 128-bit params across 20 diverse messages. ... ok
+test_textbook_fixed_params_467 (tests.test_elgamal.TestElGamal.test_textbook_fixed_params_467)
+Test textbook fixed parameters p=467, g=2, x=127 with reference verification and signing. ... ok
+test_wrong_private_key_signature_fails (tests.test_elgamal.TestElGamal.test_wrong_private_key_signature_fails)
+Test signature with wrong private key does not verify under original public key. ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.720s
+
+OK

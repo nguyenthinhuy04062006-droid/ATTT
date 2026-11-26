@@ -1,0 +1,135 @@
+test_add_round_key_fips197_appendix_b (test_aes128.TestAES128.test_add_round_key_fips197_appendix_b)
+Test AddRoundKey with round key 1 against FIPS 197 Appendix B Round 1. ... ok
+test_add_round_key_twice_returns_original (test_aes128.TestAES128.test_add_round_key_twice_returns_original)
+Edge test: Applying AddRoundKey twice with the same key returns original state. ... ok
+test_aes_transformations_roundtrip (test_aes128.TestAES128.test_aes_transformations_roundtrip)
+Test roundtrips for SubBytes, ShiftRows, and MixColumns. ... ok
+test_cbc_pkcs7_regression_vectors (test_aes128.TestAES128.test_cbc_pkcs7_regression_vectors)
+Test CBC encryption with PKCS#7 against regression vectors with student key. ... ok
+test_cbc_pkcs7_roundtrips_variable_lengths (test_aes128.TestAES128.test_cbc_pkcs7_roundtrips_variable_lengths)
+Test roundtrip for lengths 0, 1, 15, 16, 17, 31, 32, 100 bytes. ... ok
+test_decrypt_block_fips197_appendix_b (test_aes128.TestAES128.test_decrypt_block_fips197_appendix_b)
+Test decrypt_block against FIPS 197 Appendix B. ... ok
+test_decrypt_block_fips197_appendix_c1 (test_aes128.TestAES128.test_decrypt_block_fips197_appendix_c1)
+Test decrypt_block against FIPS 197 Appendix C.1. ... ok
+test_decrypt_block_roundtrips (test_aes128.TestAES128.test_decrypt_block_roundtrips)
+Test decrypt_block(encrypt_block(x)) == x for 5 fixed blocks under 2 keys. ... ok
+test_decrypt_block_value_error (test_aes128.TestAES128.test_decrypt_block_value_error)
+Test decrypt_block raises ValueError on invalid block size or round key count. ... ok
+test_decrypt_message_value_errors (test_aes128.TestAES128.test_decrypt_message_value_errors)
+Test ValueError on bad ciphertext length and tampered padding. ... ok
+test_encrypt_block_fips197_appendix_b (test_aes128.TestAES128.test_encrypt_block_fips197_appendix_b)
+Test encrypt_block against FIPS 197 Appendix B. ... ok
+test_encrypt_block_fips197_appendix_c1 (test_aes128.TestAES128.test_encrypt_block_fips197_appendix_c1)
+Test encrypt_block against FIPS 197 Appendix C.1. ... ok
+test_encrypt_block_value_error (test_aes128.TestAES128.test_encrypt_block_value_error)
+Test encrypt_block raises ValueError on invalid block size or round key count. ... ok
+test_fips197_appendix_c1 (test_aes128.TestAES128.test_fips197_appendix_c1)
+Mandatory NIST FIPS-197 Appendix C.1 test vector. ... ok
+test_gf_mul_fips197_sec4_2_1 (test_aes128.TestAES128.test_gf_mul_fips197_sec4_2_1)
+Test gf_mul against FIPS 197 Section 4.2.1. ... ok
+test_gf_xtime_fips197_sec4_2_1 (test_aes128.TestAES128.test_gf_xtime_fips197_sec4_2_1)
+Test xtime in GF(2^8) against FIPS 197 Section 4.2.1. ... ok
+test_inv_mix_columns_fips197 (test_aes128.TestAES128.test_inv_mix_columns_fips197)
+Test InvMixColumns against FIPS 197 Appendix B Round 1 state. ... ok
+test_inv_mix_columns_single_columns (test_aes128.TestAES128.test_inv_mix_columns_single_columns)
+Test InvMixColumns on single column test vectors placed in column 0. ... ok
+test_inv_shift_rows_fips197 (test_aes128.TestAES128.test_inv_shift_rows_fips197)
+Test InvShiftRows against FIPS 197 test vector. ... ok
+test_inv_sub_bytes_fips197 (test_aes128.TestAES128.test_inv_sub_bytes_fips197)
+Test InvSubBytes against FIPS 197 test vector. ... ok
+test_key_expansion_fips197_appendix_a1 (test_aes128.TestAES128.test_key_expansion_fips197_appendix_a1)
+Test A: FIPS 197 Appendix A.1 test vectors for w4..w7 and w40..w43. ... ok
+test_key_expansion_fips197_appendix_c1 (test_aes128.TestAES128.test_key_expansion_fips197_appendix_c1)
+Test B: FIPS 197 Appendix C.1 test vectors for w4..w7 and round key 10. ... ok
+test_key_expansion_shape_and_initial_key (test_aes128.TestAES128.test_key_expansion_shape_and_initial_key)
+Test C: Shape 11x4x4, byte range 0..255, and round_keys[0] equals key bytes. ... ok
+test_mix_columns_fips197_appendix_b (test_aes128.TestAES128.test_mix_columns_fips197_appendix_b)
+Test MixColumns against FIPS 197 Appendix B full 16-byte states. ... ok
+test_mix_columns_single_columns (test_aes128.TestAES128.test_mix_columns_single_columns)
+Test MixColumns on single column test vectors placed in column 0. ... ok
+test_nist_sp800_38a_f21_cbc (test_aes128.TestAES128.test_nist_sp800_38a_f21_cbc)
+Test AES-128 CBC mode against NIST SP 800-38A Section F.2.1 with prepended IV and PKCS#7. ... ok
+test_pkcs7_pad_unpad (test_aes128.TestAES128.test_pkcs7_pad_unpad)
+Test PKCS#7 pad and unpad roundtrips for lengths 0..33 and invalid padding detection. ... ok
+test_random_iv_produces_different_ciphertexts (test_aes128.TestAES128.test_random_iv_produces_different_ciphertexts)
+Test encrypting same plaintext twice without fixed IV produces distinct ciphertexts. ... ok
+test_regression_vector_student_key (test_aes128.TestAES128.test_regression_vector_student_key)
+Test regression vector under student derived key in both encrypt and decrypt directions. ... ok
+test_shift_rows_fips197_appendix_b (test_aes128.TestAES128.test_shift_rows_fips197_appendix_b)
+Test ShiftRows against FIPS 197 Appendix B Round 1. ... ok
+test_student_derived_key_single_block (test_aes128.TestAES128.test_student_derived_key_single_block)
+Test AES-128 single block roundtrip with student key derived from SHA-256('Nguyen Thi Nhu Y'). ... ok
+test_student_mode_message_roundtrip (test_aes128.TestAES128.test_student_mode_message_roundtrip)
+Test arbitrary-length message encryption using student's chosen mode and padding. ... ok
+test_sub_bytes_fips197_appendix_b (test_aes128.TestAES128.test_sub_bytes_fips197_appendix_b)
+Test SubBytes against FIPS 197 Appendix B Round 1. ... ok
+test_elgamal_full_flow_with_generated_params (test_elgamal.TestElGamal.test_elgamal_full_flow_with_generated_params)
+Test full generation of parameters, keys, and signing. ... ok
+test_elgamal_sign_verify_valid (test_elgamal.TestElGamal.test_elgamal_sign_verify_valid)
+Test standard signing and verification with valid keys and message. ... ok
+test_elgamal_tampered_message_fails (test_elgamal.TestElGamal.test_elgamal_tampered_message_fails)
+Test that altering 1 bit in the message invalidates the signature. ... ok
+test_elgamal_tampered_signature_fails (test_elgamal.TestElGamal.test_elgamal_tampered_signature_fails)
+Test that altering 1 bit in signature components (r or s) invalidates verification. ... ok
+test_keypair_ranges (test_elgamal.TestElGamal.test_keypair_ranges)
+Test keypair adheres to 2 <= x <= p - 2 and y == g^x mod p. ... ok
+test_negative_verification_cases (test_elgamal.TestElGamal.test_negative_verification_cases)
+Test that tampered signatures, keys, and malformed inputs return False without raising. ... ok
+test_params_512_bits (test_elgamal.TestElGamal.test_params_512_bits)
+Single test for 512-bit safe prime parameter generation and sign/verify roundtrip. ... ok
+test_params_various_bit_lengths (test_elgamal.TestElGamal.test_params_various_bit_lengths)
+Test parameter generation across bits=8, 10, 16, 32, 64, 128 and error for bits=7. ... ok
+test_randomized_signatures_different (test_elgamal.TestElGamal.test_randomized_signatures_different)
+Test same message signed twice produces distinct (r, s) due to fresh k. ... ok
+test_roundtrip_128_bit_params_20_signatures (test_elgamal.TestElGamal.test_roundtrip_128_bit_params_20_signatures)
+Test round trip with 128-bit params across 20 diverse messages. ... ok
+test_textbook_fixed_params_467 (test_elgamal.TestElGamal.test_textbook_fixed_params_467)
+Test textbook fixed parameters p=467, g=2, x=127 with reference verification and signing. ... ok
+test_wrong_private_key_signature_fails (test_elgamal.TestElGamal.test_wrong_private_key_signature_fails)
+Test signature with wrong private key does not verify under original public key. ... ok
+test_extended_gcd (test_rsa.TestRSA.test_extended_gcd)
+Test extended_gcd on specified pairs. ... ok
+test_fixed_textbook_key (test_rsa.TestRSA.test_fixed_textbook_key)
+Test fixed textbook key p=61, q=53, n=3233, e=17, d=2753. ... ok
+test_generate_prime_bit_lengths_and_uniqueness (test_rsa.TestRSA.test_generate_prime_bit_lengths_and_uniqueness)
+Test generate_prime for exact bit length, primality by trial division, and uniqueness. ... ok
+test_is_probable_prime_composites (test_rsa.TestRSA.test_is_probable_prime_composites)
+Test is_probable_prime with k=40 on composites including Carmichael numbers. ... ok
+test_is_probable_prime_primes (test_rsa.TestRSA.test_is_probable_prime_primes)
+Test is_probable_prime with k=40 on known primes. ... ok
+test_miller_rabin_known_values (test_rsa.TestRSA.test_miller_rabin_known_values)
+Test Miller-Rabin on known primes and composites. ... ok
+test_mod_inverse (test_rsa.TestRSA.test_mod_inverse)
+Test Extended Euclidean algorithm mod_inverse. ... ok
+test_mod_inverse_vectors (test_rsa.TestRSA.test_mod_inverse_vectors)
+Test modular inverse with specific test vectors and non-coprime error. ... ok
+test_rsa_roundtrip_1024_bits (test_rsa.TestRSA.test_rsa_roundtrip_1024_bits)
+Test RSA roundtrip with 1024-bit key. ... ok
+test_rsa_roundtrip_512_bits (test_rsa.TestRSA.test_rsa_roundtrip_512_bits)
+Test RSA keypair generation and roundtrip encryption/decryption (512-bit). ... ok
+test_rsa_value_errors (test_rsa.TestRSA.test_rsa_value_errors)
+Test ValueError for out-of-range message and ciphertext. ... ok
+test_wrong_private_key_fails (test_rsa.TestRSA.test_wrong_private_key_fails)
+Test that wrong private key (d + 1) does not decrypt to original m. ... ok
+test_avalanche_effect (test_sha256.TestSHA256.test_avalanche_effect)
+Test that altering 1 bit in the input flips roughly 50% (+/- 15%) of the hash bits. ... ok
+test_empty_string (test_sha256.TestSHA256.test_empty_string)
+Test vector for empty string: SHA-256('') ... ok
+test_nist_abc (test_sha256.TestSHA256.test_nist_abc)
+Mandatory test vector 1: SHA-256('abc') ... ok
+test_nist_multi_block (test_sha256.TestSHA256.test_nist_multi_block)
+Test vector spanning across multiple blocks (56-byte message boundary). ... ok
+test_student_name (test_sha256.TestSHA256.test_student_name)
+Mandatory test vector 2: SHA-256('Nguyen Thi Nhu Y') ... ok
+test_pkcs7_16_byte_input_full_block (test_utils.TestUtils.test_pkcs7_16_byte_input_full_block)
+Test that a 16-byte input gets a full 16-byte padding block. ... ok
+test_pkcs7_invalid_padding_rejected (test_utils.TestUtils.test_pkcs7_invalid_padding_rejected)
+Test that invalid padding bytes and lengths are properly rejected. ... ok
+test_pkcs7_pad_unpad_lengths (test_utils.TestUtils.test_pkcs7_pad_unpad_lengths)
+Test PKCS#7 pad and unpad roundtrips for lengths 0..33. ... ok
+
+----------------------------------------------------------------------
+Ran 65 tests in 1.402s
+
+OK
